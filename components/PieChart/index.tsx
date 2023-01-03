@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import React from "react";
+import Portion from "./Portion";
 
 interface Props {
     size?: 'sm' | 'md' | 'lg'
@@ -14,7 +15,7 @@ const PieChart: React.FC<Props> = ({size}: Props) => {
         'w-28 h-28': size === 'sm',
       }
     )}>
-
+      <Portion/>
     </div>
   );
 }
